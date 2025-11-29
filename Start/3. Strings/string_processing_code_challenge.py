@@ -28,10 +28,8 @@ def process_string(the_string, term):
         elif char in string.ascii_lowercase:
             string_dict["Lowercase"] += 1
 
-    term_lowercase = term.lower()
-    if the_string.find(term_lowercase) != -1:
-        string_dict["Found"] = True
-        string_dict["Index"] = the_string.index(term_lowercase)
+    string_dict["Found"] = the_string.lower().find(term.lower()) >= 0
+    string_dict["Index"] = the_string.lower().find(term.lower())
 
     return string_dict
 
