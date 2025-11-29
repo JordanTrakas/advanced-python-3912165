@@ -3,13 +3,13 @@
 
 sample_text = "The quick brown fox jumps over the lazy dog."
 
-tempstr = sample_text.lower()
+temp_str = sample_text.lower()
 
 # Using find() to find the first occurrence of a substring
-print("First occurrence of 'the':", tempstr.find("the"))
+print("First occurrence of 'the':", temp_str.find("the"))
 
 # Example with optional start and end parameters
-print("First occurrence of 'the' after index 5:", tempstr.find("the", 5, 36))
+print("First occurrence of 'the' after index 5:", temp_str.find("the", 5, 36))
 
 # Using index() to find the first occurrence of a substring (raises ValueError if not found)
 try:
@@ -27,7 +27,7 @@ print("Last occurrence of 'a':", sample_text.rfind("the"))
 print("Last occurrence of 'jump':", sample_text.rindex("jump"))
 
 # The replace() function will find content in the string and replace it
-result = sample_text.replace("lazy","tired")
-print(result)
-result = tempstr.replace("the","THE")
-print(result)
+result_1 = sample_text.replace("lazy","tired")
+print(result_1)
+result_2 = temp_str.replace("the","THE")
+print(result_2)
