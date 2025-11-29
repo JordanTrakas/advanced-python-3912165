@@ -21,9 +21,9 @@ from datetime import datetime, timedelta
 # print(next(counter))
 
 # accumulate creates an iterator that accumulates values
-# vals = [10,20,30,40,50,40,30]
-# acc = itertools.accumulate(vals, min)
-# print(list(acc))
+vals = [10,20,30,40,50,40,30]
+acc = itertools.accumulate(vals, max)
+print(list(acc))
 
 # print(next(acc))
 # print(next(acc))
