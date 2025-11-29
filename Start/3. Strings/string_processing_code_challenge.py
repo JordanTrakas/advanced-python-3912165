@@ -21,11 +21,11 @@ def process_string(the_string, term):
     for char in the_string:
         if char in string.punctuation:
             string_dict["Punctuation"] += 1
-        if char in string.whitespace:
+        elif char in string.whitespace:
             string_dict["Whitespace"] += 1
-        if char in string.ascii_uppercase:
+        elif char in string.ascii_uppercase:
             string_dict["Uppercase"] += 1
-        if char in string.ascii_lowercase:
+        elif char in string.ascii_lowercase:
             string_dict["Lowercase"] += 1
 
     term_lowercase = term.lower()
