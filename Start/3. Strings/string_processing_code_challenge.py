@@ -10,6 +10,7 @@
 }"""
 
 import string
+import pprint
 
 def process_string(the_string, term):
     string_dict = {"Punctuation": 0,
@@ -37,4 +38,4 @@ some_string = "The quick, brown 'fox' jumps OVER the lazy dog; dog not impressed
 string_term = "Fox"
 
 some_string_stats = process_string(some_string, string_term)
-print(some_string_stats)
+pprint.pprint(some_string_stats)
