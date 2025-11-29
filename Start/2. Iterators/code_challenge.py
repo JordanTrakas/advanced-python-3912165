@@ -6,20 +6,8 @@ show_expected_result = False
 show_hints = False
 
 def find_largest(numbers):
-    # Zip iterables all together
-    chained_numbers = list(itertools.chain.from_iterable(numbers))
-
-    # Create list of the zipped iterables
-    chained_max_list = list(itertools.accumulate(chained_numbers, max))
-
-    # Find length of list
-    chained_max_list_length = len(chained_max_list)
-
-    # Find last item of list, which is the maximum number
-    max_number = chained_max_list[chained_max_list_length - 1]
-
-    # Return the maximum item in the list
-    return max_number
+    # The fastest way to do this is to chain the lists and find the max
+    return max(itertools.chain.from_iterable(numbers))
 
 test_numbers = [
     [43, 2, 77, 48, 24, 9, 3, 65, 41, 42, 10, 75, 14, 69, 61],
