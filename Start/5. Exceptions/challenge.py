@@ -32,6 +32,8 @@ def test_oven(test_temp):
         oven.set_temp(test_temp)
     except InvalidTempError as e:
         print(e)
+    else:
+        print(f"The oven was set to {oven.get_temp()}")
     finally:
         print(f"Current temp setting is {oven.get_temp()}\n")
 
