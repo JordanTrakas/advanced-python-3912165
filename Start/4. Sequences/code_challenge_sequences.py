@@ -3,8 +3,7 @@
 import string
 
 def unique_characters(s):
-    unique_chars = {c for c in s if c in string.punctuation}
-    return unique_chars
+    return {c for c in s if c in string.punctuation}
 
 test_string = "The quick, brown fox: jumps over the lazy dog! Dog not amused."
 print(unique_characters(test_string))
